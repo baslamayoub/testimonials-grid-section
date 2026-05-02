@@ -40,6 +40,8 @@ html {
 }
 .testimonials-grid {
   padding: 3rem;
+  display: grid;
+  row-gap: 3.2rem;
 }
 .testimonial {
   color: var(--White);
@@ -83,12 +85,26 @@ html {
 .testimonial--daniel {
   background-color: var(--Purple-500);
 }
-.testimonial--dajonathanniel {
+.testimonial--jonathan {
   background-color: var(--Grey-500);
 }
 .testimonial--jeanette {
   color: var(--Black);
   background-color: var(--White);
+}
+/* &sssssssssss */
+.testimonial--jeanette .testimonial__title,
+.testimonial--jeanette .testimonial__name,
+.testimonial--kira .testimonial__name,
+.testimonial--kira .testimonial__title {
+  color: var(--Grey-500);
+}
+
+/* &sssssssssss */
+.testimonial--jeanette .testimonial__quote,
+.testimonial--jeanette .testimonial__status,
+.testimonial--kira .testimonial__quote ,.testimonial--kira .testimonial__status{
+  color: var(--Grey-400);
 }
 .testimonial--patrick {
   background-color: var(--Dark-blue);
