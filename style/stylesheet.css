@@ -1,5 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Barlow semi condensed";
+  src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow semi condensed";
+  src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+.testimonials {
+  width: 100%;
+  background-color: var(--Grey-100);
+  /* margin: 3rem; */
+}
+.testimonials-grid {
+  padding: 3rem;
+}
+.testimonial {
+  color: var(--White);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  padding: 3.6rem;
+  font-family: "Barlow semi condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+.testimonial__header .testimonial__avatar {
+  border-radius: 50%;
+  width: 2.8rem;
+}
+.testimonial__profile .testimonial__name {
+  font-size: 1.3rem;
+}
+.testimonial__profile .testimonial__status {
+  font-size: 1.1rem;
+}
+.testimonial .testimonial__title {
+  font-family: "Barlow semi condensed", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.testimonial .testimonial__quote {
+  font-family: "Barlow semi condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 140%;
+}
+
+.testimonial--daniel {
+  background-color: var(--Purple-500);
+}
+.testimonial--dajonathanniel {
+  background-color: var(--Grey-500);
+}
+.testimonial--jeanette {
+  color: var(--Black);
+  background-color: var(--White);
+}
+.testimonial--patrick {
+  background-color: var(--Dark-blue);
+}
+.testimonial--kira {
+  color: var(--Black);
+  background-color: var(--White);
 }
