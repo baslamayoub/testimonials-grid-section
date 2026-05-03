@@ -19,27 +19,44 @@
 }
 
 @font-face {
-  font-family: "Barlow semi condensed";
+  font-family: "Barlow Semi condensed";
   src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Barlow semi condensed";
+  font-family: "Barlow Semi condensed";
   src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Barlow Semi condensed", sans-serif;
+  font-size: 1.3rem;
+  min-height: 100vh;
+  background-color: var(--Grey-100);
 }
 html {
   font-size: 62.5%;
 }
+.container {
+  width: 100%;
+  max-width: 111rem;
+  margin: 0 auto;
+  padding: 7.1rem 2.4rem;
+}
 .testimonials {
   width: 100%;
+  min-height: 100vh;
+
   background-color: var(--Grey-100);
+  display: flex;
+  align-items: center;
   /* margin: 3rem; */
 }
 .testimonials-grid {
-  padding: 3rem;
   display: grid;
   row-gap: 3.2rem;
 }
@@ -48,10 +65,12 @@ html {
   border-radius: 0.8rem;
   overflow: hidden;
   padding: 3.6rem;
-  font-family: "Barlow semi condensed", sans-serif;
+  min-width: 0;
+  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  box-shadow: 4rem 6rem 5rem -4.7rem rgba(72, 85, 106, 0.25);
 }
 .testimonial__header {
   display: flex;
@@ -61,18 +80,19 @@ html {
 .testimonial__header .testimonial__avatar {
   border-radius: 50%;
   width: 2.8rem;
+  border: 0.2rem solid var(--Purple-300);
 }
-.testimonial__profile .testimonial__name {
-  font-size: 1.3rem;
+/* .testimonial__profile .testimonial__name {
+
 }
 .testimonial__profile .testimonial__status {
-  font-size: 1.1rem;
-}
+} */
 .testimonial .testimonial__title {
   font-family: "Barlow semi condensed", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 120%;
+  overflow-wrap: break-word;
 }
 
 .testimonial .testimonial__quote {
@@ -80,21 +100,23 @@ html {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 140%;
+  overflow-wrap: break-word;
 }
 
 .testimonial--daniel {
   background-color: var(--Purple-500);
+  border: 0.2rem solid var(--Purple-300);
 }
 .testimonial--jonathan {
   background-color: var(--Grey-500);
 }
 .testimonial--jeanette {
   color: var(--Black);
-  background-color: var(--White);
 }
 
 .testimonial--patrick {
   background-color: var(--Dark-blue);
+  
 }
 .testimonial--kira {
   color: var(--Black);
