@@ -92,6 +92,15 @@ html {
   color: var(--Black);
   background-color: var(--White);
 }
+
+.testimonial--patrick {
+  background-color: var(--Dark-blue);
+}
+.testimonial--kira {
+  color: var(--Black);
+  background-color: var(--White);
+}
+
 /* &sssssssssss */
 .testimonial--jeanette .testimonial__title,
 .testimonial--jeanette .testimonial__name,
@@ -103,13 +112,7 @@ html {
 /* &sssssssssss */
 .testimonial--jeanette .testimonial__quote,
 .testimonial--jeanette .testimonial__status,
-.testimonial--kira .testimonial__quote ,.testimonial--kira .testimonial__status{
+.testimonial--kira .testimonial__quote,
+.testimonial--kira .testimonial__status {
   color: var(--Grey-400);
-}
-.testimonial--patrick {
-  background-color: var(--Dark-blue);
-}
-.testimonial--kira {
-  color: var(--Black);
-  background-color: var(--White);
 }
